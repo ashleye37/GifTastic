@@ -1,0 +1,25 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #17a2b8;
+    background-color: lightyellow;
+}
+
+header {
+    text-align: center;
+    background-image: url("../images/halftone-yellow.png");
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-info {
+    margin-top: 10px;
+    margin:10px;
+}
+
+.gif {
+    margin: 10px;
+}
+
+.listedGifs {
+    align-content: center;
+}
