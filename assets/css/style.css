@@ -11,15 +11,14 @@ header {
     margin-bottom: 20px;
 }
 
+#preloadedGifs {
+    margin-bottom: 10px;
+}
 .btn-info {
     margin-top: 10px;
     margin:10px;
 }
 
-.gif {
-    margin: 10px;
-}
-
-.listedGifs {
-    align-content: center;
+.gifContainer {
+    text-align: center;
 }

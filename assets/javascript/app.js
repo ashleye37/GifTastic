@@ -35,21 +35,20 @@ $(document).ready(function() {
             for (var j = 0; j < response.data.length; j++) {
                 console.log("Hello!");
                 var gifContainer = $("<div>");
-                gifContainer.addClass("gifContainer");
+                gifContainer.addClass("col-md-3 gifContainer");
                 var generateGifs = $("<img>");
                 generateGifs.addClass("gif");
                 generateGifs.attr("data-state" , "still");
                 generateGifs.attr("src", response.data[j].images.fixed_height_small_still.url);
                 generateGifs.attr("data-animate", response.data[j].images.fixed_height_small.url);
                 generateGifs.attr("data-still", response.data[j].images.fixed_height_small_still.url);
-                var rating = $("<div>");
+                var rating = $("<h5>");
                 rating.addClass("gifRating");
                 rating.text("Rating: " + response.data[j].rating);
-                $(".gifContainer").append(rating);
-                $(".gifContainer").append(generateGifs);
+                $(gifContainer).append(rating);
+                $(gifContainer).append(generateGifs);
                 $(".listedGifs").append(gifContainer);
-            }
-            
+            } 
         });
     }
     
@@ -94,6 +93,7 @@ $(document).ready(function() {
         var addShow = $("#show-input").val().trim();
         shows.push(addShow);
         createTVButtons();
+        $("#show-input").val(" ");
     });
 
   
